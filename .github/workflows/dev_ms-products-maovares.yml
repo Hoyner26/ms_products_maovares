@@ -45,6 +45,7 @@ jobs:
           path: '${{ github.workspace }}/target/*.jar'
 
   deploy:
+    environment: dev
     runs-on: ubuntu-latest
     needs: build
     permissions:
